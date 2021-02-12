@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: Roboto;
+}
+
+.container {
+    width: 1185px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.header__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 105px;
+}
+
+.header__menu {
+    display: flex;
+    align-self: flex-end;
+
+    margin-right: 200px;
+}
+
+.header__menu-item {
+    margin-right: 50px;
+ 
+    font-size: 16px;
+    color: #1E266D;
+    position: relative;
+}
+
+.header__menu-item:last-child {
+    margin-right: 0;
+}
+
+.header__menu-item:hover::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-image: url('../img/header/arrow.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: -20px;
+    left: 35%;
+}
+
+.header__phone {
+    margin-right: 35px;
+
+    font-size: 16px;
+    line-height: 80px;
+    color: #1E266D;
+}
+
+.header__btn-contact {
+    padding: 12px 15px;
+    font-size: 16px;
+    color: #FFFFFF;
+    
+    background: #3751FF;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(180deg, rgba(242, 249, 255, 0) 0%, #F2F9FF 100%);
+    background-position: center -150px;
+}
+
+.hero__inner {
+    padding-top: 150px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 56px;
+    line-height: 60px;
+    color: #1E266D;
+    margin-bottom: 25px;
+}
+
+.hero__text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #455880;
+    margin-bottom: 25px;
+}
+
+.hero__btn {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    padding: 15px 40px;
+
+    transition: all .3s;
+}
+
+.hero__btn:hover {
+    background: #3751FF;
+    color: #FFFFFF;
+}
+
+.hero__btn-buy {
+    margin-right: 25px;
+}
+
+.hero__img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* LOGOS */
+
+.logos__inner {
+    text-align: center;
+}
+
+.logos__title {
+    font-size: 16px;
+    line-height: 27px;
+    color: rgba(69, 88, 128, 0.5);
+    margin-bottom: 50px;
+}
+
+.logos__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logos__item {
+    opacity: .5;
+    transition: all .3s;
+}
+
+.logos__item:hover {
+    opacity: 1;
+}
+
+.logos__img {
+    cursor: pointer;
+}
